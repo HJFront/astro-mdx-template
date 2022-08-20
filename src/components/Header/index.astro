@@ -1,16 +1,17 @@
 ---
 import HeaderLink from '../Link/index.astro';
-import { SITE_TITLE } from '../../config';
+import { BASE_URL, SITE_TITLE } from '../../config';
 ---
 
 <header>
 	<h2>
 		{SITE_TITLE}
+    {BASE_URL}
 	</h2>
 	<nav>
-		<HeaderLink href="/">mdx</HeaderLink>
-		<HeaderLink href="/md">md</HeaderLink>
-		<HeaderLink href="/astro">astro</HeaderLink>
+		<HeaderLink href={`${BASE_URL}`}>mdx</HeaderLink>
+		<HeaderLink href={`${BASE_URL}md`}>md</HeaderLink>
+		<HeaderLink href={`${BASE_URL}astro`}>astro</HeaderLink>
 		<HeaderLink href="https://github.com/HJFront/astro-mdx-template" target="_blank">GitHub</HeaderLink>
 	</nav>
 </header>
