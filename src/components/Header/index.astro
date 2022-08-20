@@ -1,0 +1,24 @@
+---
+import HeaderLink from '../Link/index.astro';
+import { SITE_TITLE } from '../../config';
+---
+
+<header>
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/">mdx</HeaderLink>
+		<HeaderLink href="/md">md</HeaderLink>
+		<HeaderLink href="/astro">astro</HeaderLink>
+		<HeaderLink href="https://github.com/HJFront/astro-mdx-template" target="_blank">GitHub</HeaderLink>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>

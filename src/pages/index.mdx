@@ -1,4 +1,9 @@
-import Counter from '../components/Counter.jsx';
+---
+layout: "../layouts/BlogPost.astro"
+description: 'Lorem ipsum dolor sit amet'
+---
+
+import Counter from '../components/Counter';
 import Title from '../components/Title.astro';
 export const components = { h1: Title };
 
@@ -8,13 +13,16 @@ export const authors = [
 ];
 export const published = new Date('2022-02-01');
 
-# Hello world!
+# This is the content of the page written by mdx
 
 [//]: # (Written by: {new Intl.ListFormat&#40;'en'&#41;.format&#40;authors.map&#40;d => d.name&#41;&#41;}.)
 
 [//]: # (Published on: {new Intl.DateTimeFormat&#40;'en', {dateStyle: 'long'}&#41;.format&#40;published&#41;}.)
 
-<Counter client:idle>This is a **counter**!</Counter>
+<Counter count={0} client:visible>
+  <h1>Hello, React!</h1>
+  This is a **counter**!
+</Counter>
 
 ## Syntax highlighting
 
