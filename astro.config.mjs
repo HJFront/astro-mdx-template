@@ -5,5 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://github.com/HJFront/astro-mdx-template',
+  base: '/astro-mdx-template',
 	integrations: [mdx(), react(), sitemap()],
 });
