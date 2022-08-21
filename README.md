@@ -1,4 +1,4 @@
-# 🚀 astro-mdx-template
+# 🚀 astro-page-template
 
 Build a web page based on `astro`
 
